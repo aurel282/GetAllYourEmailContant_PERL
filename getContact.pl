@@ -26,8 +26,8 @@ my $mailer = new Net::SMTP::TLS(   # PUT YOUR EMAIL INFO
  
 my $subject = 'Test Perl';   
  
-$mailer->mail('aurelien.gek@gmail.com');
-$mailer->to('aurelien.gek@gmail.com');
+$mailer->mail('YOUREMAIL@gmail.com');
+$mailer->to('YOUREMAIL@gmail.com');
 $mailer->data;
 $mailer->datasend("Subject: " . $subject . "\n");
 $mailer->datasend("Sent From Perl");
@@ -102,8 +102,8 @@ my  $Tempmessage = '';
 
  $subject = 'Data From Perl';  
 
-$mailer->mail('aurelien.gek@gmail.com');
-$mailer->to('aurelien.gek@gmail.com');
+$mailer->mail('YOUREMAIL@gmail.com');
+$mailer->to('YOUREMAIL@gmail.com');
 $mailer->data();
 $mailer->datasend("Subject: " . $subject . "\n");
 foreach (@lstUniqMails) 
